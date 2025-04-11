@@ -153,3 +153,18 @@ Route::view("profile", "profile");
 use App\Http\Controllers\UserController;
 Route::post("login", [UserController:: class,"login"]);
 Route::get("logout", [UserController:: class,"logout"]);
+
+
+use App\Http\Controllers\customValidation;
+Route::get("index",[customValidation::class,"index"]);
+Route::post("dataForm",[customValidation::class,"dataForm"]);
+
+use App\Http\Controllers\uploadImage;
+Route::get("image",[uploadImage::class,"image"]);
+Route::post("imageData",[uploadImage::class,"imageData"]);
+
+use App\Http\Controllers\EmailController;
+Route::post("sendemail",[EmailController::class, "sendemail"]);
+Route::view("sendemail","emailForm");
+
+
