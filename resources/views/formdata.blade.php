@@ -4,8 +4,8 @@
 
 </head>
 <body>
-    <form action="data" method="post">
-        @crsf
+    <form action="data1" method="post">
+        @csrf
         <h1>Log In</h1>
         <input type="text" name="user"><br><br>
         <input type="text" name="email"><br><br>

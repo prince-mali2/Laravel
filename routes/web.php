@@ -168,3 +168,17 @@ Route::post("sendemail",[EmailController::class, "sendemail"]);
 Route::view("sendemail","emailForm");
 
 
+use App\Http\Controllers\Form1;
+
+Route::get("form12",[Form1:: class,"index"]);
+Route::post("form12",[Form1:: class,"data1"]);
+
+
+use App\Http\Controllers\mysqlcontroller;
+Route :: get("select" , [mysqlcontroller::class , "select"]);
+Route :: get("insert" , [mysqlcontroller::class , "insert"]);
+Route :: get("update" , [mysqlcontroller::class , "update"]);
+Route :: get("delete" , [mysqlcontroller::class , "delete"]);
+
+
+
